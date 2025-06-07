@@ -1,0 +1,499 @@
+src/routes/analytics.ts:62:18 - error TS6133: 'req' is declared but its value is never read.
+
+62 router.get('/', (req: Request, res: Response) => {
+                    ~~~
+
+src/routes/analytics.ts:102:28 - error TS6133: 'req' is declared but its value is never read.
+
+102 router.get('/engagement', (req: Request, res: Response) => {
+                               ~~~
+
+src/routes/analytics.ts:142:27 - error TS6133: 'req' is declared but its value is never read.
+
+142 router.get('/followers', (req: Request, res: Response) => {
+                              ~~~
+
+src/routes/analytics.ts:177:25 - error TS6133: 'req' is declared but its value is never read.
+
+177 router.get('/content', (req: Request, res: Response) => {
+                            ~~~
+
+src/routes/analytics.ts:223:26 - error TS6133: 'req' is declared but its value is never read.
+
+223 router.get('/realtime', (req: Request, res: Response) => {
+                             ~~~
+
+src/routes/automation.ts:37:24 - error TS6133: 'req' is declared but its value is never read.
+
+37 router.get('/status', (req: Request, res: Response) => {
+                          ~~~
+
+src/routes/automation.ts:50:23 - error TS2769: No overload matches this call.
+  The last overload gave the following error.
+    Argument of type '(req: Request, res: Response) => Promise<express.Response<any, Record<string, any>> | undefined>' is not assignable to parameter of type 'Application<Record<string, any>>'.
+      Type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>>) => Promise<...>' is missing the following properties from type 'Application<Record<string, any>>': init, defaultConfiguration, engine, set, and 63 more.
+
+50 router.post('/start', async (req: Request, res: Response) => {
+                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  node_modules/@types/express-serve-static-core/index.d.ts:168:5
+    168     (path: PathParams, subApplication: Application): T;
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    The last overload is declared here.
+
+src/routes/automation.ts:50:23 - error TS7030: Not all code paths return a value.
+
+50 router.post('/start', async (req: Request, res: Response) => {
+                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/routes/automation.ts:50:30 - error TS6133: 'req' is declared but its value is never read.
+
+50 router.post('/start', async (req: Request, res: Response) => {
+                                ~~~
+
+src/routes/automation.ts:90:22 - error TS2769: No overload matches this call.
+  The last overload gave the following error.
+    Argument of type '(req: Request, res: Response) => express.Response<any, Record<string, any>> | undefined' is not assignable to parameter of type 'Application<Record<string, any>>'.
+      Type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>>) => Response<...> | undefined' is missing the following properties from type 'Application<Record<string, any>>': init, defaultConfiguration, engine, set, and 63 more.
+
+90 router.post('/stop', (req: Request, res: Response) => {
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  node_modules/@types/express-serve-static-core/index.d.ts:168:5
+    168     (path: PathParams, subApplication: Application): T;
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    The last overload is declared here.
+
+src/routes/automation.ts:90:22 - error TS7030: Not all code paths return a value.
+
+90 router.post('/stop', (req: Request, res: Response) => {
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/routes/automation.ts:90:23 - error TS6133: 'req' is declared but its value is never read.
+
+90 router.post('/stop', (req: Request, res: Response) => {
+                         ~~~
+
+src/routes/automation.ts:128:24 - error TS6133: 'req' is declared but its value is never read.
+
+128 router.get('/config', (req: Request, res: Response) => {
+                           ~~~
+
+src/routes/automation.ts:149:23 - error TS2769: No overload matches this call.
+  The last overload gave the following error.
+    Argument of type '(req: Request, res: Response) => express.Response<any, Record<string, any>> | undefined' is not assignable to parameter of type 'Application<Record<string, any>>'.
+      Type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>>) => Response<...> | undefined' is missing the following properties from type 'Application<Record<string, any>>': init, defaultConfiguration, engine, set, and 63 more.
+
+149 router.put('/config', (req: Request, res: Response) => {
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  node_modules/@types/express-serve-static-core/index.d.ts:168:5
+    168     (path: PathParams, subApplication: Application): T;
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    The last overload is declared here.
+
+src/routes/automation.ts:149:23 - error TS7030: Not all code paths return a value.
+
+149 router.put('/config', (req: Request, res: Response) => {
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/routes/automation.ts:176:25 - error TS6133: 'req' is declared but its value is never read.
+
+176 router.get('/metrics', (req: Request, res: Response) => {
+                            ~~~
+
+src/routes/dashboard.ts:108:18 - error TS6133: 'req' is declared but its value is never read.
+
+108 router.get('/', (req: Request, res: Response) => {
+                     ~~~
+
+src/routes/dashboard.ts:125:23 - error TS6133: 'req' is declared but its value is never read.
+
+125 router.get('/stats', (req: Request, res: Response) => {
+                          ~~~
+
+src/routes/dashboard.ts:167:26 - error TS2769: No overload matches this call.
+  The last overload gave the following error.
+    Argument of type '(req: Request, res: Response) => express.Response<any, Record<string, any>> | undefined' is not assignable to parameter of type 'Application<Record<string, any>>'.
+      Type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>>) => Response<...> | undefined' is missing the following properties from type 'Application<Record<string, any>>': init, defaultConfiguration, engine, set, and 63 more.
+
+167 router.post('/activity', (req: Request, res: Response) => {
+                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  node_modules/@types/express-serve-static-core/index.d.ts:168:5
+    168     (path: PathParams, subApplication: Application): T;
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    The last overload is declared here.
+
+src/routes/dashboard.ts:167:26 - error TS7030: Not all code paths return a value.
+
+167 router.post('/activity', (req: Request, res: Response) => {
+                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/routes/dashboard.ts:235:29 - error TS6133: 'req' is declared but its value is never read.
+
+235 router.get('/performance', (req: Request, res: Response) => {
+                                ~~~
+
+src/routes/logs.ts:92:28 - error TS6133: 'req' is declared but its value is never read.
+
+92 router.get('/automation', (req: Request, res: Response) => {
+                              ~~~
+
+src/routes/logs.ts:114:26 - error TS6133: 'req' is declared but its value is never read.
+
+114 router.get('/training', (req: Request, res: Response) => {
+                             ~~~
+
+src/routes/logs.ts:137:24 - error TS6133: 'req' is declared but its value is never read.
+
+137 router.get('/errors', (req: Request, res: Response) => {
+                           ~~~
+
+src/routes/logs.ts:154:24 - error TS6133: 'req' is declared but its value is never read.
+
+154 router.get('/system', (req: Request, res: Response) => {
+                           ~~~
+
+src/routes/logs.ts:174:26 - error TS6133: 'req' is declared but its value is never read.
+
+174 router.get('/realtime', (req: Request, res: Response) => {
+                             ~~~
+
+src/routes/logs.ts:192:21 - error TS6133: 'req' is declared but its value is never read.
+
+192 router.delete('/', (req: Request, res: Response) => {
+                        ~~~
+
+src/routes/logs.ts:240:23 - error TS6133: 'req' is declared but its value is never read.
+
+240 router.get('/stats', (req: Request, res: Response) => {
+                          ~~~
+
+src/routes/training.ts:31:22 - error TS6133: 'req' is declared but its value is never read.
+
+31 router.get('/jobs', (req: Request, res: Response) => {
+                        ~~~
+
+src/routes/training.ts:39:25 - error TS2769: No overload matches this call.
+  The last overload gave the following error.
+    Argument of type '(req: Request, res: Response) => express.Response<any, Record<string, any>> | undefined' is not assignable to parameter of type 'Application<Record<string, any>>'.
+      Type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>>) => Response<...> | undefined' is missing the following properties from type 'Application<Record<string, any>>': init, defaultConfiguration, engine, set, and 63 more.
+
+39 router.get('/jobs/:id', (req: Request, res: Response) => {
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  node_modules/@types/express-serve-static-core/index.d.ts:168:5
+    168     (path: PathParams, subApplication: Application): T;
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    The last overload is declared here.
+
+src/routes/training.ts:39:25 - error TS7030: Not all code paths return a value.
+
+39 router.get('/jobs/:id', (req: Request, res: Response) => {
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/routes/training.ts:48:25 - error TS2769: No overload matches this call.
+  The last overload gave the following error.
+    Argument of type '(req: Request, res: Response) => Promise<express.Response<any, Record<string, any>> | undefined>' is not assignable to parameter of type 'Application<Record<string, any>>'.
+      Type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>>) => Promise<...>' is missing the following properties from type 'Application<Record<string, any>>': init, defaultConfiguration, engine, set, and 63 more.
+
+48 router.post('/youtube', async (req: Request, res: Response) => {
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  node_modules/@types/express-serve-static-core/index.d.ts:168:5
+    168     (path: PathParams, subApplication: Application): T;
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    The last overload is declared here.
+
+src/routes/training.ts:48:25 - error TS7030: Not all code paths return a value.
+
+48 router.post('/youtube', async (req: Request, res: Response) => {
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/routes/training.ts:91:23 - error TS2769: No overload matches this call.
+  The last overload gave the following error.
+    Argument of type '(req: Request, res: Response) => Promise<express.Response<any, Record<string, any>> | undefined>' is not assignable to parameter of type 'Application<Record<string, any>>'.
+      Type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>>) => Promise<...>' is missing the following properties from type 'Application<Record<string, any>>': init, defaultConfiguration, engine, set, and 63 more.
+
+91 router.post('/audio', async (req: Request, res: Response) => {
+                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  node_modules/@types/express-serve-static-core/index.d.ts:168:5
+    168     (path: PathParams, subApplication: Application): T;
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    The last overload is declared here.
+
+src/routes/training.ts:91:23 - error TS7030: Not all code paths return a value.
+
+91 router.post('/audio', async (req: Request, res: Response) => {
+                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/routes/training.ts:133:25 - error TS2769: No overload matches this call.
+  The last overload gave the following error.
+    Argument of type '(req: Request, res: Response) => Promise<express.Response<any, Record<string, any>> | undefined>' is not assignable to parameter of type 'Application<Record<string, any>>'.
+      Type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>>) => Promise<...>' is missing the following properties from type 'Application<Record<string, any>>': init, defaultConfiguration, engine, set, and 63 more.
+
+133 router.post('/website', async (req: Request, res: Response) => {
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  node_modules/@types/express-serve-static-core/index.d.ts:168:5
+    168     (path: PathParams, subApplication: Application): T;
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    The last overload is declared here.
+
+src/routes/training.ts:133:25 - error TS7030: Not all code paths return a value.
+
+133 router.post('/website', async (req: Request, res: Response) => {
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/routes/training.ts:177:26 - error TS2769: No overload matches this call.
+  The last overload gave the following error.
+    Argument of type '(req: Request, res: Response) => Promise<express.Response<any, Record<string, any>> | undefined>' is not assignable to parameter of type 'Application<Record<string, any>>'.
+      Type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>>) => Promise<...>' is missing the following properties from type 'Application<Record<string, any>>': init, defaultConfiguration, engine, set, and 63 more.
+
+177 router.post('/document', async (req: Request, res: Response) => {
+                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  node_modules/@types/express-serve-static-core/index.d.ts:168:5
+    168     (path: PathParams, subApplication: Application): T;
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    The last overload is declared here.
+
+src/routes/training.ts:177:26 - error TS7030: Not all code paths return a value.
+
+177 router.post('/document', async (req: Request, res: Response) => {
+                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/routes/training.ts:219:23 - error TS6133: 'req' is declared but its value is never read.
+
+219 router.get('/stats', (req: Request, res: Response) => {
+                          ~~~
+
+src/routes/training.ts:324:73 - error TS6133: 'type' is declared but its value is never read.
+
+324 async function processDocumentTraining(jobId: string, filePath: string, type: string) {
+                                                                            ~~~~
+
+src/routes/upload.ts:11:17 - error TS6133: 'req' is declared but its value is never read.
+
+11   destination: (req, file, cb) => {
+                   ~~~
+
+src/routes/upload.ts:11:22 - error TS6133: 'file' is declared but its value is never read.
+
+11   destination: (req, file, cb) => {
+                        ~~~~
+
+src/routes/upload.ts:21:14 - error TS6133: 'req' is declared but its value is never read.
+
+21   filename: (req, file, cb) => {
+                ~~~
+
+src/routes/upload.ts:31:11 - error TS6133: 'req' is declared but its value is never read.
+
+31   return (req: any, file: Express.Multer.File, cb: multer.FileFilterCallback) => {
+             ~~~
+
+src/routes/upload.ts:87:52 - error TS2769: No overload matches this call.
+  The last overload gave the following error.
+    Argument of type '(req: Request, res: Response) => express.Response<any, Record<string, any>> | undefined' is not assignable to parameter of type 'RequestHandlerParams<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+      Type '(req: Request, res: Response) => express.Response<any, Record<string, any>> | undefined' is not assignable to type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+        Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void | Promise<void>'.
+          Type 'Response<any, Record<string, any>>' is not assignable to type 'void | Promise<void>'.
+
+87 router.post('/audio', audioUpload.single('audio'), (req: Request, res: Response) => {
+                                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  node_modules/@types/express-serve-static-core/index.d.ts:157:5
+    157     <
+            ~
+    158         P = ParamsDictionary,
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ... 
+    166         ...handlers: Array<RequestHandlerParams<P, ResBody, ReqBody, ReqQuery, LocalsObj>>
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    167     ): T;
+        ~~~~~~~~~
+    The last overload is declared here.
+
+src/routes/upload.ts:87:52 - error TS7030: Not all code paths return a value.
+
+87 router.post('/audio', audioUpload.single('audio'), (req: Request, res: Response) => {
+                                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/routes/upload.ts:121:61 - error TS2769: No overload matches this call.
+  The last overload gave the following error.
+    Argument of type '(req: Request, res: Response) => express.Response<any, Record<string, any>> | undefined' is not assignable to parameter of type 'RequestHandlerParams<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+      Type '(req: Request, res: Response) => express.Response<any, Record<string, any>> | undefined' is not assignable to type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+        Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void | Promise<void>'.
+          Type 'Response<any, Record<string, any>>' is not assignable to type 'void | Promise<void>'.
+
+121 router.post('/document', documentUpload.single('document'), (req: Request, res: Response) => {
+                                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  node_modules/@types/express-serve-static-core/index.d.ts:157:5
+    157     <
+            ~
+    158         P = ParamsDictionary,
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ... 
+    166         ...handlers: Array<RequestHandlerParams<P, ResBody, ReqBody, ReqQuery, LocalsObj>>
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    167     ): T;
+        ~~~~~~~~~
+    The last overload is declared here.
+
+src/routes/upload.ts:121:61 - error TS7030: Not all code paths return a value.
+
+121 router.post('/document', documentUpload.single('document'), (req: Request, res: Response) => {
+                                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/routes/upload.ts:155:52 - error TS2769: No overload matches this call.
+  The last overload gave the following error.
+    Argument of type '(req: Request, res: Response) => express.Response<any, Record<string, any>> | undefined' is not assignable to parameter of type 'RequestHandlerParams<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+      Type '(req: Request, res: Response) => express.Response<any, Record<string, any>> | undefined' is not assignable to type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+        Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void | Promise<void>'.
+          Type 'Response<any, Record<string, any>>' is not assignable to type 'void | Promise<void>'.
+
+155 router.post('/image', imageUpload.single('image'), (req: Request, res: Response) => {
+                                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  node_modules/@types/express-serve-static-core/index.d.ts:157:5
+    157     <
+            ~
+    158         P = ParamsDictionary,
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ... 
+    166         ...handlers: Array<RequestHandlerParams<P, ResBody, ReqBody, ReqQuery, LocalsObj>>
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    167     ): T;
+        ~~~~~~~~~
+    The last overload is declared here.
+
+src/routes/upload.ts:155:52 - error TS7030: Not all code paths return a value.
+
+155 router.post('/image', imageUpload.single('image'), (req: Request, res: Response) => {
+                                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/routes/upload.ts:216:26 - error TS2769: No overload matches this call.
+  The last overload gave the following error.
+    Argument of type '(req: Request, res: Response) => express.Response<any, Record<string, any>> | undefined' is not assignable to parameter of type 'Application<Record<string, any>>'.
+      Type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>>) => Response<...> | undefined' is missing the following properties from type 'Application<Record<string, any>>': init, defaultConfiguration, engine, set, and 63 more.
+
+216 router.get('/files/:id', (req: Request, res: Response) => {
+                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  node_modules/@types/express-serve-static-core/index.d.ts:168:5
+    168     (path: PathParams, subApplication: Application): T;
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    The last overload is declared here.
+
+src/routes/upload.ts:216:26 - error TS7030: Not all code paths return a value.
+
+216 router.get('/files/:id', (req: Request, res: Response) => {
+                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/routes/upload.ts:232:35 - error TS2769: No overload matches this call.
+  The last overload gave the following error.
+    Argument of type '(req: Request, res: Response) => express.Response<any, Record<string, any>> | undefined' is not assignable to parameter of type 'Application<Record<string, any>>'.
+      Type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>>) => Response<...> | undefined' is missing the following properties from type 'Application<Record<string, any>>': init, defaultConfiguration, engine, set, and 63 more.
+
+232 router.get('/files/:id/download', (req: Request, res: Response) => {
+                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  node_modules/@types/express-serve-static-core/index.d.ts:168:5
+    168     (path: PathParams, subApplication: Application): T;
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    The last overload is declared here.
+
+src/routes/upload.ts:232:35 - error TS7030: Not all code paths return a value.
+
+232 router.get('/files/:id/download', (req: Request, res: Response) => {
+                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/routes/upload.ts:253:29 - error TS2769: No overload matches this call.
+  The last overload gave the following error.
+    Argument of type '(req: Request, res: Response) => express.Response<any, Record<string, any>> | undefined' is not assignable to parameter of type 'Application<Record<string, any>>'.
+      Type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>>) => Response<...> | undefined' is missing the following properties from type 'Application<Record<string, any>>': init, defaultConfiguration, engine, set, and 63 more.
+
+253 router.delete('/files/:id', (req: Request, res: Response) => {
+                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  node_modules/@types/express-serve-static-core/index.d.ts:168:5
+    168     (path: PathParams, subApplication: Application): T;
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    The last overload is declared here.
+
+src/routes/upload.ts:253:29 - error TS7030: Not all code paths return a value.
+
+253 router.delete('/files/:id', (req: Request, res: Response) => {
+                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/routes/upload.ts:279:35 - error TS2769: No overload matches this call.
+  The last overload gave the following error.
+    Argument of type '(req: Request, res: Response) => express.Response<any, Record<string, any>> | undefined' is not assignable to parameter of type 'Application<Record<string, any>>'.
+      Type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>>) => Response<...> | undefined' is missing the following properties from type 'Application<Record<string, any>>': init, defaultConfiguration, engine, set, and 63 more.
+
+279 router.patch('/files/:id/status', (req: Request, res: Response) => {
+                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  node_modules/@types/express-serve-static-core/index.d.ts:168:5
+    168     (path: PathParams, subApplication: Application): T;
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    The last overload is declared here.
+
+src/routes/upload.ts:279:35 - error TS7030: Not all code paths return a value.
+
+279 router.patch('/files/:id/status', (req: Request, res: Response) => {
+                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/routes/upload.ts:309:23 - error TS6133: 'req' is declared but its value is never read.
+
+309 router.get('/stats', (req: Request, res: Response) => {
+                          ~~~
+
+src/routes/upload.ts:340:12 - error TS2769: No overload matches this call.
+  The last overload gave the following error.
+    Argument of type '(error: any, req: Request, res: Response, next: any) => express.Response<any, Record<string, any>> | undefined' is not assignable to parameter of type 'PathParams'.
+
+340 router.use((error: any, req: Request, res: Response, next: any) => {
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  node_modules/@types/express-serve-static-core/index.d.ts:157:5
+    157     <
+            ~
+    158         P = ParamsDictionary,
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ... 
+    166         ...handlers: Array<RequestHandlerParams<P, ResBody, ReqBody, ReqQuery, LocalsObj>>
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    167     ): T;
+        ~~~~~~~~~
+    The last overload is declared here.
+
+src/routes/upload.ts:340:12 - error TS7030: Not all code paths return a value.
+
+340 router.use((error: any, req: Request, res: Response, next: any) => {
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/routes/upload.ts:340:25 - error TS6133: 'req' is declared but its value is never read.
+
+340 router.use((error: any, req: Request, res: Response, next: any) => {
+                            ~~~
+
+src/routes/upload.ts:340:54 - error TS6133: 'next' is declared but its value is never read.
+
+340 router.use((error: any, req: Request, res: Response, next: any) => {
+                                                         ~~~~
+
+
+Found 64 errors in 6 files.
+
+Errors  Files
+     5  src/routes/analytics.ts:62
+    11  src/routes/automation.ts:37
+     5  src/routes/dashboard.ts:108
+     7  src/routes/logs.ts:92
+    13  src/routes/training.ts:31
+    23  src/routes/upload.ts:11
