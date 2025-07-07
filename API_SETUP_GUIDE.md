@@ -15,7 +15,7 @@ Edit this file: `/workspace/Riona-AI-Agent/.env`
 
 ```env
 # These are already set up and working!
-GEMINI_API_KEY_1=AIzaSyBwOdDKvtandLwzPhtGS_nqFYzkWY0_RQE
+GEMINI_API_KEY_1=
 # ... 49 more keys already configured
 ```
 
